@@ -23,4 +23,5 @@
 #define SYS_trace 22
 #define SYS_get_priority 23
 #define SYS_set_priority 24
+/* Lab 3 - Josh Andrews */
 #define SYS_cps 25

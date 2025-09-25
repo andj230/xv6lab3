@@ -5,8 +5,8 @@
 struct stat;
 
 // system calls
+/* Lab 3 - Josh Andrews & Miles Taylor */
 int cps(void);
-int trace(int);
 int set_priority(int, int);
 int get_priority(int);
 int fork(void);

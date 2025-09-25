@@ -21,10 +21,10 @@ sub entry {
     print " ret\n";
 }
 	
+# Lab 3 - Josh Andrews & Miles Taylor #
 entry("cps");
 entry("set_priority");
 entry("get_priority");
-entry("trace");
 entry("fork");
 entry("exit");
 entry("wait");

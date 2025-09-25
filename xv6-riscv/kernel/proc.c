@@ -102,6 +102,7 @@ int allocpid() {
   return pid;
 }
 
+/* Lab 3 - Josh Andrews */
 // current process status
 int 
 cps(void)
@@ -233,6 +234,7 @@ void userinit(void) {
   p = allocproc();
   initproc = p;
 
+  /* Lab 3 - Josh Andrews */
   p->nice = 20;
   p->cwd = namei("/");
 
@@ -271,6 +273,7 @@ int kfork(void) {
     return -1;
   }
 
+  /* Lab 3 - Josh Andrews */
   // Copy parent tracemask to child
   np->tracemask = p->tracemask;
 

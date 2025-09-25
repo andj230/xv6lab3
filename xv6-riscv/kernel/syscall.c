@@ -63,6 +63,7 @@ int argstr(int n, char *buf, int max) {
 }
 
 // Prototypes for the functions that handle system calls.
+/* Lab 3 - Josh Andrews */
 extern uint64 sys_cps(void);
 extern uint64 sys_trace(void);
 extern uint64 sys_fork(void);

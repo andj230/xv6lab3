@@ -4,6 +4,8 @@ ESTIMATE of time to complete lab: 3 hours
 Date  Time   Spent Part Work completed
 ----  -----  ----  ---- ---------
 16/09 17:00  0:15  2    Repo setup, copied parts of nice implementation from Lab 2
+25/09 16:45  0:30  2    Implemented nice, ran base lab3test and took screenshot for lab report
+25/09 17:30  ____  3    ___
               -----
                _:__  TOTAL time Spent
 (TODO problems faced ... needed?)

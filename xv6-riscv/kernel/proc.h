@@ -91,6 +91,7 @@ struct proc {
   struct spinlock lock;
 
   int tracemask;
+  /* Lab 3 - Josh Andrews */
   int nice;
 
   // p->lock must be held when using these:

@@ -123,7 +123,8 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h $K/param.h
 .PRECIOUS: %.o
 
 UPROGS=\
-	$U/_lab2e3test\
+	$U/_nice\
+	$U/_lab3test\
 	$U/_ps\
 	$U/_cat\
 	$U/_echo\
@@ -131,7 +132,6 @@ UPROGS=\
 	$U/_grep\
 	$U/_init\
 	$U/_kill\
-	$U/_trace\
 	$U/_ln\
 	$U/_ls\
 	$U/_mkdir\

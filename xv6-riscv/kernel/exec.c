@@ -120,6 +120,9 @@ kexec(char *path, char **argv)
   // argc is returned via the system call return
   // value, which goes in a0.
   p->trapframe->a1 = sp;
+  
+  /* Lab 3 - Miles Taylor */
+  p->nice = 10; // set the nice value to 10 (for Round-Robin scheduling)
 
   // Save program name for debugging.
   for(last=s=path; *s; s++)
