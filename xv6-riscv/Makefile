@@ -125,6 +125,7 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h $K/param.h
 UPROGS=\
 	$U/_nice\
 	$U/_lab3test\
+	$U/_lab3test2\
 	$U/_ps\
 	$U/_cat\
 	$U/_echo\

@@ -1,0 +1,124 @@
+$ lab3test2 &; lab3test2 &; lab3test2 &
+$ Parent 5 creatinCg childh il9
+d 9 created
+Parent P8arent 7  crcrCeatihnild 1g0  ccChihld i1l1eadt in11r
+ eatcergd
+child 10
+eated
+ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNING         20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNING         20
+lab3test2        11      RUNNABLE        20
+ps       12      RUNNING         10
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNING         20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNABLE        20
+lab3test2        11      RUNNING         20
+ps       13      RUNNING         10
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNABLE        20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNING         20
+lab3test2        11      RUNNING         20
+ps       14      RUNNING         10
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNABLE        20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNING         20
+lab3test2        11      RUNNABLE        20
+ps       15      RUNNING         10
+$ sp
+exec sp failed
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNABLE        20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNING         20
+lab3test2        11      RUNNING         20
+ps       17      RUNNING         10
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNABLE        20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNING         20
+lab3test2        11      RUNNING         20
+ps       18      RUNNING         10
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNABLE        20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNING         20
+lab3test2        11      RUNNING         20
+ps       19      RUNNING         10
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNING         20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNING         20
+lab3test2        11      RUNNABLE        20
+ps       20      RUNNING         10
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNING         20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNABLE        20
+lab3test2        11      RUNNING         20
+ps       21      RUNNING         10
+$ ps
+name     pid     state   priority
+init     1       SLEEEPING       10
+sh       2       SLEEEPING       10
+lab3test2        9       RUNNING         20
+lab3test2        8       SLEEEPING       10
+lab3test2        5       SLEEEPING       10
+lab3test2        7       SLEEEPING       10
+lab3test2        10      RUNNABLE        20
+lab3test2        11      RUNNING         20
+ps       22      RUNNING         10
+$ Child 10 terminated
+pChild 9 terminated
+sChild 11 terminated
+ps
+exec psps failed
