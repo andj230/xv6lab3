@@ -429,6 +429,10 @@ void scheduler(void) {
   struct proc *p;
   struct cpu *c = mycpu();
 
+  /* Lab 3 - Miles Taylor */
+  struct proc *highest_p; // process with highest priority
+  /* -------------------- */
+
   c->proc = 0;
   for (;;) {
     // The most recent process to run may have had interrupts
@@ -439,28 +443,38 @@ void scheduler(void) {
     intr_on();
     intr_off();
 
-    int found = 0;
+    /* Lab 3 - Miles Taylor */
+    highest_p = 0;  // resets for each scheduling cycle
+    
+    // find the RUNNABLE process with the lowest nice value
     for (p = proc; p < &proc[NPROC]; p++) {
       acquire(&p->lock);
       if (p->state == RUNNABLE) {
-        // Switch to chosen process.  It is the process's job
-        // to release its lock and then reacquire it
-        // before jumping back to us.
-        p->state = RUNNING;
-        c->proc = p;
-        swtch(&c->context, &p->context);
-
-        // Process is done running for now.
-        // It should have changed its p->state before coming back.
-        c->proc = 0;
-        found = 1;
+        if (highest_p == 0 || p->nice < highest_p->nice) {
+          if (highest_p)
+            release(&highest_p->lock); // release previously acquired lock
+          highest_p = p; // store new highest priority process
+          continue; // keep its lock held for later context switch
+        }
       }
       release(&p->lock);
     }
-    if (found == 0) {
-      // nothing to run; stop running on this core until an interrupt.
+    
+    // run the selected process (if one is found)
+    if (highest_p != 0) {
+      highest_p->state = RUNNING;
+      c->proc = highest_p;
+      swtch(&c->context, &highest_p->context);
+
+      // Process is done running for now.
+      // It should have changed its p->state before coming back.
+      c->proc = 0;
+      release(&highest_p->lock);
+    } else {
+      // nothing to run; stop CPU until an interrupt
       asm volatile("wfi");
     }
+    /* -------------------- */
   }
 }
 

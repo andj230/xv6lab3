@@ -1,4 +1,4 @@
-ESTIMATE of time to complete lab: 3 hours
+ESTIMATE of time to complete lab: ___ hours
 
       Start  Time  Lab
 Date  Time   Spent Part Work completed
@@ -6,6 +6,7 @@ Date  Time   Spent Part Work completed
 16/09 17:00  0:15  2    Repo setup, copied parts of nice implementation from Lab 2
 25/09 16:45  0:30  2    Implemented nice, ran base lab3test and took screenshot for lab report
 25/09 20:00  0:25  3    Created lab3test2 and captured round-robin output
+26/09 20:00  0:30  4    Started priority scheduling implementation, need to modify ps nice value to capture output
               -----
                _:__  TOTAL time Spent
 (TODO problems faced ... needed?)
