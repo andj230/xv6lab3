@@ -3,9 +3,9 @@ ESTIMATE of time to complete lab: 3 hours
       Start  Time  Lab
 Date  Time   Spent Part Work completed
 ----  -----  ----  ---- ---------
-9/22   3:50  4:45  1    Added cps system call 
-              -----
-               _:__  TOTAL time Spent
-(TODO problems faced ... needed?)
+9/22   3:50  0:55  1    Added cps system call and fixed xv6 being a submodule in the git repo.
+9/28   10:50 0:50  5    Finished Part 5, Wrote up the Lab Report, and Submitted project. 
+             1:45 TOTAL time Spent
+
 
 For part 1, I spent thirty minutes trying to fix an inclusion issue that was caused by my headers autoformatting into the wrong order. 

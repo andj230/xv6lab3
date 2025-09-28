@@ -1,4 +1,4 @@
-ESTIMATE of time to complete lab: ___ hours
+ESTIMATE of time to complete lab: 3 hours
 
       Start  Time  Lab
 Date  Time   Spent Part Work completed
@@ -6,7 +6,8 @@ Date  Time   Spent Part Work completed
 16/09 17:00  0:15  2    Repo setup, copied parts of nice implementation from Lab 2
 25/09 16:45  0:30  2    Implemented nice, ran base lab3test and took screenshot for lab report
 25/09 20:00  0:25  3    Created lab3test2 and captured round-robin output
-26/09 20:00  0:30  4    Started priority scheduling implementation, need to modify ps nice value to capture output
+26/09 20:00  0:30  4    Started priority scheduling implementation
               -----
-               _:__  TOTAL time Spent
-(TODO problems faced ... needed?)
+             1:40 TOTAL time Spent
+
+The main problem I faced during this lab had to do with capturing the output for the priority scheduling implementation, where I couldn't print the output of ps while the lab3test instances were still running. I fixed this by changing the priority value of ps to 10.
